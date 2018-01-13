@@ -7,6 +7,7 @@
         <script src="https://use.fontawesome.com/76631c7790.js"></script>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>Corporate Performance Analyzer</title>
     </head>
@@ -37,10 +38,10 @@
             <div class="container-fluid bg-dark text-light pt-5 pb-3 mb-5">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-7">
                             <span class="display-4">Apple Inc</span>
                         </div>
-                        <div class="col-sm-6 d-flex">
+                        <div class="col-sm-5 d-flex">
                             <div class="align-self-center">
                                 <div id="search-bar">
                                     <div class="input-group">
@@ -72,7 +73,7 @@
                     </div>
                     
                     
-                    <div class="row pt-3 pb-3">
+                    <div class="row p-3">
                         <div class="col-5 d-flex align-content-stretch flex-column">
                             <span class="h5 mb-3">Existing Ratios</span>
                             <div class="col">
@@ -88,15 +89,15 @@
                         </div>
                         <div class="col-2">
                             <p></p>
-                            <button class="btn btn-block">Numerator +</button>
-                            <button class="btn btn-block">Numerator -</button>
-                            <button class="btn btn-block">Denominator +</button>
-                            <button class="btn btn-block">Denominator -</button>
-                            <button class="btn btn-block">Remove</button>
-                            <button class="btn btn-block">Remove All</button>
+                            <button class="btn btn-block bt-dark text-light">Numerator +</button>
+                            <button class="btn btn-block bt-dark text-light">Numerator -</button>
+                            <button class="btn btn-block bt-dark text-light">Denominator +</button>
+                            <button class="btn btn-block bt-dark text-light">Denominator -</button>
+                            <button class="btn btn-block bt-dark text-light">Remove</button>
+                            <button class="btn btn-block bt-dark text-light">Remove All</button>
                             
                         </div>
-                        <div class="col-5 d-flex flex-column align-content-stretch">
+                        <div class="col-5 d-flex flex-column align-content-stretch p-3">
                             <p class="m-0">Numerator</p>
                             <div class="col">
                                 <select id="sbNum" multiple="multiple">
@@ -128,12 +129,12 @@
                 <div class="col-12 card card-3 pb-4 mt-5">
                     <div class="row">
                         <!-- First Column  -->
-                        <div class="col-md-6">
+                        <div class="col-md-6 pr-5">
                             <!-- Title -->
                             <div class="card text-center p-2 mb-4 card-3 title-card text-light"><span class="h4">Calculations</span></div>
                             <!-- Ratio table -->
-                            <div class="table-responsive">
-                                <table class="table table-sm">
+                            <div class="table-responsive px-3 py-1 mr-2">
+                                <table class="table table-sm mr-2">
                                     <thead class="thead-light">
                                         <tr>
                                             <th scope="col">Type</th>
@@ -166,7 +167,7 @@
                             <!-- Graph -->
                             <div class="card text-center p-2 card-3 graph-card text-light">
                                 <p class="h6">Graph</p>
-                                <canvas id="myChart"></canvas>
+                                <canvas class="text-light" id="myChart"></canvas>
                                 
                             </div>
                             
@@ -187,7 +188,7 @@
                         
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 px-5">
                             
                             <p>Articles</p>
                             <div class="list-group">
@@ -235,7 +236,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6 d-flex align-content-stretch flex-column">
+                        <div class="col-md-6 px-5 d-flex align-content-stretch flex-column">
                             <p>Keywords</p>
                             <div class="col pb-5">
                                 <select multiple="multiple" id="keywords-select">

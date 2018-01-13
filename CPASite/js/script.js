@@ -9,9 +9,9 @@ var ctx = document.getElementById("myChart").getContext('2d');
                 label: 'Ratio',
                 data: [5, 2, 3],
                 backgroundColor: [
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
+                    'rgba(75, 192, 192, 0.7)',
+                    'rgba(153, 102, 255, 0.7)',
+                    'rgba(255, 159, 64, 0.7)'
                 ],
                 borderColor: [
                     'rgba(75, 192, 192, 1)',
@@ -22,12 +22,36 @@ var ctx = document.getElementById("myChart").getContext('2d');
             }]
         },
         options: {
+            legend: {
+                labels: {
+                    fontColor: '#EEEEEE'
+                }
+            },
+            gridLines: {
+                color: '#EEEEEE'
+            },
             scales: {
                 yAxes: [{
                     ticks: {
-                        beginAtZero:true
+                        beginAtZero:true,
+                        fontColor: '#EEEEEE'
+                    },
+                    gridLines: {
+                       color: '#EEEEEE'
+                    },
+                    scaleLabel: {
+                        fontColor: '#EEEEEE'
+                    }
+                }],
+                xAxes : [{
+                    ticks: {
+                        fontColor: '#EEEEEE'
+                    },
+                    gridLines: {
+                        color: '#EEEEEE'
                     }
                 }]
+
             }
         }
     });
