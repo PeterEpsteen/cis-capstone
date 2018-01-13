@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://use.fontawesome.com/76631c7790.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Corporate Performance Analyzer</title>
+    </head>
+    <body>
+        <!-- Header Content -->
+        <div class="card-2">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-6 pt-3">
+                <a class="navbar-brand" href="#">Corporate Performance Analyzer</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Analyzer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                    </ul>
+                    
+                    
+                </div>
+            </nav>
+            <div class="container-fluid bg-dark text-light pt-5 pb-3 mb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="display-4">Apple Inc</span>
+                        </div>
+                        <div class="col-sm-6 d-flex">
+                            <div class="align-self-center">
+                                <div id="search-bar">
+                                    <div class="input-group">
+                                        <input class="form-control input-lg" type="search" placeholder="Search Companies" aria-label="Search">
+                                        <button class="btn btn-info" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- End Header Content -->
+        <!-- Start Main Content -->
+        <div class="container mb-5">
+            <!-- First Card -->
+            <div class="row">
+                <div class="col-12 card card-3 pb-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card text-center p-2 card-3 title-card text-light"><span class="h4">Ratio Creator</span></div>
+                        </div>
+                        <div class="col-6">
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row pt-3 pb-3">
+                        <div class="col-5 d-flex align-content-stretch flex-column">
+                            <span class="h5 mb-3">Existing Ratios</span>
+                            <div class="col">
+                                <select id="sbOne" multiple="multiple">
+                                    <option value="1">Alpha</option>
+                                    <option value="2">Beta</option>
+                                    <option value="3">Gamma</option>
+                                    <option value="4">Delta</option>
+                                    <option value="5">Epsilon</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                        <div class="col-2">
+                            <p></p>
+                            <button class="btn btn-block">Numerator +</button>
+                            <button class="btn btn-block">Numerator -</button>
+                            <button class="btn btn-block">Denominator +</button>
+                            <button class="btn btn-block">Denominator -</button>
+                            <button class="btn btn-block">Remove</button>
+                            <button class="btn btn-block">Remove All</button>
+                            
+                        </div>
+                        <div class="col-5 d-flex flex-column align-content-stretch">
+                            <p class="m-0">Numerator</p>
+                            <div class="col">
+                                <select id="sbNum" multiple="multiple">
+                                    <option value="1">Alpha</option>
+                                    <option value="2">Beta</option>
+                                    <option value="3">Gamma</option>
+                                    <option value="4">Delta</option>
+                                    <option value="5">Epsilon</option>
+                                </select>
+                            </div>
+                            <p class="m-0">Denominator</p>
+                            <div class="col align-self-stretch">
+                                <select id="sbDem" multiple="multiple">
+                                    <option value="1">Alpha</option>
+                                    <option value="2">Beta</option>
+                                    <option value="3">Gamma</option>
+                                    <option value="4">Delta</option>
+                                    <option value="5">Epsilon</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"><button class="btn btn-lg btn-danger ml-auto mr-3 px-5 text-lg card-1">Update</button></div>
+                    
+                </div>
+            </div>
+            <!-- Second Card (Calculations) -->
+            <div class="row">
+                <div class="col-12 card card-3 pb-4 mt-5">
+                    <div class="row">
+                        <!-- First Column  -->
+                        <div class="col-md-6">
+                            <!-- Title -->
+                            <div class="card text-center p-2 mb-4 card-3 title-card text-light"><span class="h4">Calculations</span></div>
+                            <!-- Ratio table -->
+                            <div class="table-responsive">
+                                <table class="table table-sm">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">2016</th>
+                                            <th scope="col">2015</th>
+                                            <th scope="col">2014</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Asset</th>
+                                            <td>Ratio</td>
+                                            <td>Ratio</td>
+                                            <td>Ratio</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Liabilities</th>
+                                            <td>Ratio</td>
+                                            <td>Ratio</td>
+                                            <td>Ratio</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End Table -->
+                        </div>
+                        <!-- End First Column -->
+                        <!-- Second Column (Graph) -->
+                        <div class="col-6">
+                            <!-- Graph -->
+                            <div class="card text-center p-2 card-3 graph-card text-light">
+                                <p class="h6">Graph</p>
+                                <canvas id="myChart"></canvas>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card card-3 col-12 mt-5 pb-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card text-center p-2 mb-4 card-3 title-card text-light"><span class="h3">Smart Search</span></div>
+                        </div>
+                        <div class="col-md-6">
+                            
+                        </div>
+                        <!-- Title -->
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            
+                            <p>Articles</p>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1">Article Title Goes Here</p>
+                                        <small>Date 1 2018</small>
+                                    </div>
+                                    <small>Donec id elit non mi porta.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1">Article Title Goes Here</p>
+                                        <small class="text-muted">Date 1 2018</small>
+                                    </div>
+                                    <small class="text-muted">Donec id elit non mi porta.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1">Article Title Goes Here</p>
+                                        <small class="text-muted">Date 1 2018</small>
+                                    </div>
+                                    <small class="text-muted">Donec id elit non mi porta.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1">Article Title Goes Here</p>
+                                        <small>Date 1 2018</small>
+                                    </div>
+                                    <small>Donec id elit non mi porta.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1">Article Title Goes Here</p>
+                                        <small class="text-muted">Date 1 2018</small>
+                                    </div>
+                                    <small class="text-muted">Donec id elit non mi porta.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1">Article Title Goes Here</p>
+                                        <small class="text-muted">Date 1 2018</small>
+                                    </div>
+                                    <small class="text-muted">Donec id elit non mi porta.</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-content-stretch flex-column">
+                            <p>Keywords</p>
+                            <div class="col pb-5">
+                                <select multiple="multiple" id="keywords-select">
+                                    <option value="1">Alpha</option>
+                                    <option value="2">Beta</option>
+                                    <option value="3">Gamma</option>
+                                    <option value="4">Delta</option>
+                                    <option value="5">Epsilon</option>
+                                    <option value="1">Alpha</option>
+                                    <option value="2">Beta</option>
+                                    <option value="3">Gamma</option>
+                                    <option value="4">Delta</option>
+                                    <option value="5">Epsilon</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row"><button class="btn btn-lg btn-danger ml-auto mr-3 px-5 text-lg card-1">Update</button></div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Content -->
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js" integrity="sha256-vyehT44mCOPZg7SbqfOZ0HNYXjPKgBCaqxBkW3lh6bg=" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>
