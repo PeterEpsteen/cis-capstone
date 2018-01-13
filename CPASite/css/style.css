@@ -11,6 +11,15 @@ body{
 option:hover {
 	background-color: #EEEEEE;
 }
+option {
+	font-size: 1.2em;
+}
+
+#title-drop {
+	background-color: inherit;
+	border: 0;
+}
+
 .navbar {
 	color: white;
 }
