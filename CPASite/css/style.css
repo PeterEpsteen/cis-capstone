@@ -5,7 +5,7 @@ body{
 }
 
 .container {
-	max-width: 1400px;
+	max-width: 1700px;
 }
 
 option:hover {
@@ -13,6 +13,10 @@ option:hover {
 }
 option {
 	font-size: 1.2em;
+}
+
+.no-link-syle {
+	
 }
 
 #title-drop {
@@ -26,6 +30,12 @@ option {
 
 .bg-dark {
 	background-color:  #3f5c80 !important;
+}
+
+#backdrop {
+	position: absolute;
+	height: 64px;
+	padding: 0px;
 }
 
 .bt-dark {
