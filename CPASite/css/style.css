@@ -15,10 +15,10 @@ option {
 	font-size: 1.2em;
 }
 
-#title-drop {
-	background-color: inherit;
-	border: 0;
-}
+/*.title-drop {
+	background-color: inherit !important;
+	border: 0 !important; 
+}*/
 
 .navbar {
 	color: white;
@@ -65,6 +65,10 @@ option {
     border-left: solid 1px black;
 }
 
+.img-icon {
+  height: 200px;
+}
+
 div.align-self-center {
 	flex: 2;
 }
@@ -74,10 +78,13 @@ div.align-self-center {
 }
 
 .title-card, .graph-card {
-	width: 75%;
+	width: 50%;
 	margin-top: -20px;
 	border-radius: 20rem;
 	background-color: #0099CC !important;
+}
+.form-check {
+  margin-bottom: 8px;
 }
 
 .graph-card {
@@ -129,4 +136,25 @@ div.align-self-center {
 
 .card-5 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#splash{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/img/splash.jpeg");
+    background-position: center;
+  min-height: 400px;
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+  display:flex;
+    display-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.container .display-4 {
+  font-weight: 500; 
+  font-family: 'Fira Sans', sans-serif;
+}
+
+#home-body {
+  background-color: white;
 }

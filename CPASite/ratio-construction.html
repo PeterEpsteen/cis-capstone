@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://use.fontawesome.com/76631c7790.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Corporate Performance Analyzer</title>
+    </head>
+    <body>
+        <!-- Header Content -->
+        <div class="card-2">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-6 pt-3">
+                <a class="navbar-brand" href="#">Corporate Performance Analyzer</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="statements.html">Statements</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ratio
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="ratio-construction.html">Ratio Construction</a>
+                                <a class="dropdown-item" href="view-ratios.html">View Ratios</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Knowledge
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="object-capture.html">Object</a>
+                                <a class="dropdown-item" href="predicate.html">Predicate</a>
+                                <a class="dropdown-item" href="view-objects.html">View Objects</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Text
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="add-text-source.html">Add Source</a>
+                                <a class="dropdown-item" href="view-text-source.html">View Source</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="analysis.html">Analysis</a>
+                        </li>
+                    </ul>
+                    
+                    
+                </div>
+            </nav>
+            <div class="container-fluid bg-dark text-light pt-5 pb-5 mb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <p class="mb-0">Choose company:</p>
+                            <div class="dropdown show">
+                                <a id="" class="title-drop btn btn-secondary dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="h2">Apple (AAPL)</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Amazon</a>
+                                    <a class="dropdown-item" href="#">Costco</a>
+                                    <a class="dropdown-item" href="#">IBM</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 d-flex">
+                            <div class="align-self-center">
+                                <div id="search-bar">
+                                    <div class="input-group">
+                                        <input class="form-control input-lg" type="search" placeholder="Search Companies" aria-label="Search">
+                                        <button class="btn btn-info" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div style="position: absolute;" class="bg-dark container-fluid py-5"></div>
+        </div>
+        <!-- End Header Content -->
+        <!-- Start Main Content -->
+        <div class="container mb-5">
+            <!-- First Card -->
+            <div class="row">
+                <div class="col-12 card card-3 pb-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card text-center p-2 card-3 title-card text-light"><span class="h4">Ratio Creator</span></div>
+                        </div>
+                        <div class="col-6">
+                            
+                        </div>
+                    </div>
+                    <div class="row px-5 pt-4">
+                        <!-- Ratio Type -->
+                        <div class="col-md-5">
+                            <p class="h4">Ratio Type</p>
+                            <div class="card w-100 p-2">
+                            <div class="form-check">
+                                <input  class="form-check-input" type="radio" name= "ratio-type" value="financing-structure" id="financing-structure">
+                                <label for="financing-structure" class="form-check-label">Financing Structure Ratios</label>
+                            </div>
+                            <div class="form-check">
+                                <input  class="form-check-input" id="asset-allocation" value="asset-allocation" type="radio" name= "ratio-type">
+                                <label for="asset-allocation" class="form-check-label">Asset Allocation Ratios</label>
+                            </div>
+                            <div class="form-check">
+                                <input  class="form-check-input" id="asset-utilization" value="asset-utilization" type="radio" name= "ratio-type">
+                                <label for="asset-utilization" class="form-check-label">Asset Utilization Ratios</label>
+                            </div>
+                            <div class="form-check">
+                                <input  class="form-check-input" type="radio" id="sales-profitability" value="sales-profitability" name= "ratio-type">
+                                <label for="sales-profitability" class="form-check-label">Sales Profitability Ratios</label>
+                            </div>
+                            <div class="form-check">
+                                <input  id="return-on-investment" value="return-on-investment" class="form-check-input" type="radio" name= "ratio-type">
+                                <label for="return-on-investment" class="form-check-label">Return on Investment Ratios</label>
+                            </div>
+                            <div class="form-check">
+                                <input  id="others" value="others" class="form-check-input" type="radio" name= "ratio-type">
+                                <label for="others" class="form-check-label">Others</label>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <!-- Ratio Name -->
+
+                        <div class="col-md-5">
+                            <p class="h4">Ratio Name</p>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="row p-5">
+                        <div class="col-5 d-flex align-content-stretch flex-column">
+                            <span class="h5 mb-3">Existing Ratios</span>
+                            <div class="col">
+                                <select id="sbOne" multiple="multiple">
+                                    <option value="1">Alpha</option>
+                                    <option value="2">Beta</option>
+                                    <option value="3">Gamma</option>
+                                    <option value="4">Delta</option>
+                                    <option value="5">Epsilon</option>
+                                    <option value="1">Alpha Beta</option>
+                                    <option value="2">Beta Gamma</option>
+                                    <option value="3">Gamma</option>
+                                    <option value="4">Delta</option>
+                                    <option value="5">Epsilon Alpha</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                        <div class="col-2">
+                            <p></p>
+                            <button class="btn btn-block bt-dark text-light">Numerator +</button>
+                            <button class="btn btn-block bt-dark text-light">Numerator -</button>
+                            <button class="btn btn-block bt-dark text-light">Denominator +</button>
+                            <button class="btn btn-block bt-dark text-light">Denominator -</button>
+                            <button class="btn btn-block bt-dark text-light">Remove</button>
+                            <button class="btn btn-block bt-dark text-light">Remove All</button>
+                            
+                        </div>
+                        <div class="col-5 d-flex flex-column px-3">
+                            <div class="row mb-4">
+                                <div class="col">
+                            <p class="h5 m-0 mb-2">Numerator</p>
+                                <select id="sbNum" multiple="multiple">
+                                    <option value="1">Alpha</option>
+                                    <option value="2">Beta</option>
+                                    <option value="3">Gamma</option>
+                                    <option value="4">Delta</option>
+                                    <option value="5">Epsilon</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                            <p class="h5 m-0 mb-2">Denominator</p>
+                                 <select id="sbDem" multiple="multiple">
+                                    <option value="1">Alpha</option>
+                                    <option value="2">Beta</option>
+                                    <option value="3">Gamma</option>
+                                    <option value="4">Delta</option>
+                                    <option value="5">Epsilon</option>
+                                </select>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="row px-5"><button class="btn btn-lg btn-danger ml-auto mr-3 px-5 text-lg card-1">Save Ratio</button></div>
+                        </div>
+                    </div>
+            <!-- Second Card (Calculations) -->
+            <div class="row">
+                <div class="col-12 card card-3 pb-4 mt-5">
+                    <div class="row">
+                        <!-- First Column  -->
+                        <div class="col-md-6 pr-5">
+                            <!-- Title -->
+                            <div class="card text-center p-2 mb-4 card-3 title-card text-light"><span class="h4">Calculations</span></div>
+                            <!-- Ratio table -->
+                            <div class="table-responsive px-3 py-1 mr-2">
+                                <table class="table table-sm mr-2">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">2016</th>
+                                            <th scope="col">2015</th>
+                                            <th scope="col">2014</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Asset</th>
+                                            <td>Ratio</td>
+                                            <td>Ratio</td>
+                                            <td>Ratio</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Liabilities</th>
+                                            <td>Ratio</td>
+                                            <td>Ratio</td>
+                                            <td>Ratio</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End Table -->
+                        </div>
+                        <!-- End First Column -->
+                        <!-- Second Column (Graph) -->
+                        <div class="col-6">
+                            <!-- Graph -->
+                            <div class="card text-center p-2 card-3 graph-card text-light">
+                                <p class="h6">Graph</p>
+                                <canvas class="text-light" id="myChart"></canvas>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Content -->
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js" integrity="sha256-vyehT44mCOPZg7SbqfOZ0HNYXjPKgBCaqxBkW3lh6bg=" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>
