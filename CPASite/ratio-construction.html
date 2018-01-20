@@ -114,7 +114,7 @@
                         <!-- Ratio Type -->
                         <div class="col-md-5">
                             <p class="h4">Ratio Type</p>
-                            <div class="card w-100 p-2">
+                            <div class="card border border-dark w-100 p-2">
                             <div class="form-check">
                                 <input  class="form-check-input" type="radio" name= "ratio-type" value="financing-structure" id="financing-structure">
                                 <label for="financing-structure" class="form-check-label">Financing Structure Ratios</label>
@@ -171,42 +171,48 @@
                         </div>
                         <div class="col-2">
                            <p></p>
-                            <button class="btn btn-block bt-dark text-light">Numerator +</button>
-                            <button class="btn btn-block bt-dark text-light">Numerator -</button>
-                            <button class="btn btn-block bt-dark text-light">Denominator +</button>
-                            <button class="btn btn-block bt-dark text-light">Denominator -</button>
-                            <button class="btn btn-block bt-dark text-light">Remove</button>
-                            <button class="btn btn-block bt-dark text-light">Remove All</button>
+                            <button id="numPlus" class="btn btn-block bt-dark text-light">Numerator +</button>
+                            <button id="numMinus" class="btn btn-block bt-dark text-light">Numerator -</button>
+                            <button id="denominatorPlus" class="btn btn-block bt-dark text-light">Denominator +</button>
+                            <button id="denominatorMinus" class="btn btn-block bt-dark text-light">Denominator -</button>
+                            <button id="remove" class="btn btn-block bt-dark text-light">Remove</button>
+                            <button id="removeAll" class="btn btn-block bt-dark text-light">Remove All</button>
                             
                         </div>
                         <div class="col-5 d-flex flex-column px-3">
                             <div class="row mb-4">
                                 <div class="col">
                             <p class="h5 m-0 mb-2">Numerator</p>
-                                <select id="sbNum" multiple="multiple">
-                                    <option value="1">Alpha</option>
-                                    <option value="2">Beta</option>
-                                    <option value="3">Gamma</option>
-                                    <option value="4">Delta</option>
-                                    <option value="5">Epsilon</option>
+                                <select class="newRatioSelect" id="sbNum" multiple="multiple">
+                                    
                                 </select>
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <div class="col">
                             <p class="h5 m-0 mb-2">Denominator</p>
-                                 <select id="sbDem" multiple="multiple">
-                                    <option value="1">Alpha</option>
-                                    <option value="2">Beta</option>
-                                    <option value="3">Gamma</option>
-                                    <option value="4">Delta</option>
-                                    <option value="5">Epsilon</option>
+                                 <select class="newRatioSelect" id="sbDem" multiple="multiple">
+                                    
                                 </select>
                                 </div>
                                 </div>
                                 </div>
                             </div>
-                            <div class="row px-5"><button class="btn btn-lg btn-danger ml-auto mr-3 px-5 text-lg card-1">Save Ratio</button></div>
+                            <div class="row px-5">
+                                <div class="col-2"><span class="h4">Forumla:</span></div>
+                                <div class="col-4">
+                                    <div class="row"><span class="customRatioTop"></span></div>
+                                                                    <hr class="border border-dark"/>
+
+                                    <div class="row"> <span class="customRatioBottom border-right-0 border-bottom-0 border-left-0"></span>
+</div>
+                                    
+                                </div>
+                                
+                                <div class="col-6 text-right">
+                                     <button class="btn btn-primary btn-lg ml-auto">Save Ratio</button>
+                                </div>
+                               </div>
                         </div>
                     </div>
             <!-- Second Card (Calculations) -->
