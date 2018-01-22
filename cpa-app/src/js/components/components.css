@@ -1,0 +1,73 @@
+.nav-container {
+    background-color: lightskyblue;
+    justify-content: center;
+    display: flex;
+  }
+
+  .nav {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-self: stretch;
+  }
+
+  .brand {
+      margin-right: auto !important;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 2;
+}
+
+    .card-1 {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    }
+
+    .card-1:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    .card-2 {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    .card-3 {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    .card-4 {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    .card-5 {
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    }
+
+
+  .extended-navbar {
+      position: absolute;
+      background-color: rgb(37, 75, 117) !important;
+      width: 100%;
+      height: 100px;
+    }
+
+    .title-card {
+        width: 35%;
+        padding: 10px 20px;
+        position: relative;
+        bottom: 40px;
+        background-color: #0099CC !important;
+        color: white;
+        text-align: center;
+    }
+
+  /* .container {
+      max-width: 1400px !important;
+      width: 100%;
+  } */

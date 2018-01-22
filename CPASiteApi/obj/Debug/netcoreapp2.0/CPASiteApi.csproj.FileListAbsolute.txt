@@ -1,0 +1,10 @@
+/Users/peterepsteen/PetersProjects/cis-capstone/CPASiteApi/bin/Debug/netcoreapp2.0/CPASiteApi.deps.json
+/Users/peterepsteen/PetersProjects/cis-capstone/CPASiteApi/bin/Debug/netcoreapp2.0/CPASiteApi.runtimeconfig.json
+/Users/peterepsteen/PetersProjects/cis-capstone/CPASiteApi/bin/Debug/netcoreapp2.0/CPASiteApi.runtimeconfig.dev.json
+/Users/peterepsteen/PetersProjects/cis-capstone/CPASiteApi/bin/Debug/netcoreapp2.0/CPASiteApi.dll
+/Users/peterepsteen/PetersProjects/cis-capstone/CPASiteApi/bin/Debug/netcoreapp2.0/CPASiteApi.pdb
+/Users/peterepsteen/PetersProjects/cis-capstone/CPASiteApi/obj/Debug/netcoreapp2.0/CPASiteApi.csproj.CoreCompileInputs.cache
+/Users/peterepsteen/PetersProjects/cis-capstone/CPASiteApi/obj/Debug/netcoreapp2.0/CPASiteApi.AssemblyInfoInputs.cache
+/Users/peterepsteen/PetersProjects/cis-capstone/CPASiteApi/obj/Debug/netcoreapp2.0/CPASiteApi.AssemblyInfo.cs
+/Users/peterepsteen/PetersProjects/cis-capstone/CPASiteApi/obj/Debug/netcoreapp2.0/CPASiteApi.dll
+/Users/peterepsteen/PetersProjects/cis-capstone/CPASiteApi/obj/Debug/netcoreapp2.0/CPASiteApi.pdb
