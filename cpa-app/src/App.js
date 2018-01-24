@@ -22,24 +22,7 @@ import NavBarInstance from './js/components/NavbarInstance'
 const App = () => (
   <Router>
     <div>
-    {/* <nav>
-    <div>
-      <ul>
-        <li><NavLink activeClassName="active-link"  to="/home">Home</NavLink></li>
-        <li><NavLink activeClassName="active-link" to="/statements">Statements</NavLink></li>
-        <li><NavLink activeClassName="active-link" to="/ratio-construction">Ratio Construction</NavLink></li>
-        <li><NavLink activeClassName="active-link" to="/view-ratios">View Ratios</NavLink></li>
-        <li><NavLink activeClassName="active-link" to="/object">Object</NavLink></li>
-        <li><NavLink activeClassName="active-link" to="/predicate">Predicate</NavLink></li>
-        <li><NavLink activeClassName="active-link" to="/view-object">View Objects</NavLink></li>
-        <li><NavLink activeClassName="active-link" to="/add-source">Add Source</NavLink></li>
-        <li><NavLink activeClassName="active-link" to="/view-source">View Source</NavLink></li>
-        <li><NavLink activeClassName="active-link" to="/analysis">Analysis</NavLink></li>
-     </ul> */}
-
      <NavBarInstance />
-
-
       <Route exact path="/home" component={Home}/>
       <Route path="/analysis" component={Analysis}/>
       <Route path="/statements" component={Statements}/>
@@ -50,13 +33,7 @@ const App = () => (
       <Route exact path="/view-object" component={ViewObjects}/>
       <Route exact path="/add-source" component={AddSource}/>
       <Route exact path="/view-source" component={ViewSource}/>
-
-
-
-
-
-
-   </div>
+ </div>
   </Router>
 )
 
