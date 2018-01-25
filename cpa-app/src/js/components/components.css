@@ -49,6 +49,33 @@
         box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     }
 
+    ul.tabBar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+      }
+      .tabBar li {
+          padding: 10px;
+          border-radius: 5px;
+          text-align: center;
+          justify-content: center;
+          display: flex;
+          flex: 1;
+          margin-right: 10px;
+      }
+
+    .tabBar li a{
+        color: black !important;
+    }
+
+    .tabBar li.active {
+        color: white !important;
+        background: #0099CC !important;
+    }
+    .tabBar li.active a {
+        color: white !important;
+    }
 
   .extended-navbar {
       position: absolute;
