@@ -29,6 +29,9 @@ th, td {
   vertical-align: top;
   padding-top: 20px;
 }
+.col-center {
+  justify-content: center;
+}
 .card li {
   color: black;
   margin-top: 5px;

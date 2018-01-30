@@ -14,7 +14,7 @@ class Statements extends Component {
             "currentCompany" : [],
             "activeSheet": 1,
             "currentCompany" : {"id":1, "name":"Apple"},
-            "statements": [] //get statements for current company
+            "statements": ["nmn", "kjjkj"] //get statements for current company
         };
         this.setState({currentCompany: this.state.companyList[0]});
         this.setCompany = this.setCompany.bind(this);
@@ -42,6 +42,7 @@ class Statements extends Component {
                         setSheet = {this.setSheet} 
                         companyList = {this.state.companyList}
                         activeSheet = {this.state.activeSheet}
+                        statements = {this.state.statements}
                         />
                     </div>
                 </div>

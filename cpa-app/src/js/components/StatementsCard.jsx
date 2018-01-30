@@ -2,6 +2,7 @@ import React from 'react';
 import Title from './Title';
 import SelectItem from './SelectItem'
 import TabBar from './TabBar'
+import StatementTable from './StatementTable'
 
 export default class StatementsCard extends React.Component {
 
@@ -19,13 +20,20 @@ export default class StatementsCard extends React.Component {
             <div className="row">
             <div className="col">
             <TabBar onClick={this.props.setSheet} 
-                tabs = {[{"name": "Income Statement", "value": 1},
-                        {"name": "Balance Sheet", "value": 2}]} 
+                tabs = {[{"name": "Income Statement", "value": 0},
+                        {"name": "Balance Sheet", "value": 1}]} 
                         activeTab = {this.props.activeSheet } />
             </div>
             <div className="col"></div>
             <div className="col"></div>
                 
+            </div>
+            <div className="row">
+                <div className="col">
+                    <StatementTable 
+                    activeSheet = {this.props.activeSheet}
+                    statements = {this.props.statements}/>
+                </div>
             </div>
             </div>
             </div>

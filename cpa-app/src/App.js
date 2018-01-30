@@ -23,7 +23,7 @@ const App = () => (
   <Router>
     <div>
      <NavBarInstance />
-      <Route exact path="/home" component={Home}/>
+      <Route exact path="/" component={Home}/>
       <Route path="/analysis" component={Analysis}/>
       <Route path="/statements" component={Statements}/>
       <Route path="/ratio-construction" component = {RatioConstruction}/>

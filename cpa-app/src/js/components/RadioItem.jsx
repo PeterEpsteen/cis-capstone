@@ -2,10 +2,12 @@ import React from 'react';
 export default class RadioItem extends React.Component {
     render() {
         return(
+            <div className="form-group">
+            <input type="radio" value={this.props.value}/>
             <label>
-            <input type="radio" value={this.props.value} checked={true}/>
             {this.props.label}
             </label>
+            </div>
         );
     }
 }
